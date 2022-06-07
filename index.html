@@ -1,0 +1,42 @@
+<!-- internal - in html file itself -->
+<!-- external - creating a seperate file and linking it to html -->
+<!-- inline   - used to apply a unique style to a single HTML element. uses style tag of html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>first page</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <div>
+      <form>
+        <!-- first name -->
+        <label for="fname">First Name</label>
+        <input
+          type="text"
+          name="firstname"
+          id="fname"
+          placeholder="first name"
+        />
+
+        <!-- second name -->
+        <label for="lname">Last Name</label>
+        <input type="text" name="lastname" id="lname" placeholder="last name" />
+
+        <!-- country -->
+        <label for="country">Country</label>
+        <select name="country" id="country">
+          <option>--select--</option>
+          <option>India</option>
+          <option>Spain</option>
+          <option>USA</option>
+          <option>Columbia</option>
+          <option>Argentina</option>
+        </select>
+        <!-- submit -->
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>
